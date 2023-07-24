@@ -57,21 +57,22 @@ class _StartState extends State<Start> {
       backgroundColor: darkNord1,
       body: Center(
         child: Hero(
-            tag: 'logo',
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Image.asset('assets/logo-splash.png'),
-                const SizedBox(
-                  height: 10,
-                ),
-                if (hasError)
-                  const Text(
-                    'Coudn\'t connect, try again',
-                    style: TextStyle(color: Colors.white),
-                  )
-              ],
-            )),
+          tag: 'logo',
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Image.asset('assets/logo-splash.png'),
+              const SizedBox(
+                height: 10,
+              ),
+              if (hasError)
+                const Text(
+                  'Coudn\'t connect, try again',
+                  style: TextStyle(color: Colors.white),
+                )
+            ],
+          )
+        ),
       ),
     );
   }
